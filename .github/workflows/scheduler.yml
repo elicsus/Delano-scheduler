@@ -3,9 +3,6 @@
 name: Run Python Script and Alert via Telegram
 
 on:
-  # Allows manual triggering of the workflow
-  workflow_dispatch:
-  
   # Schedule to run the workflow automatically (e.g., every hour)
   schedule:
     - cron: "*/5 * * * *" # Adjust this as needed
