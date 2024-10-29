@@ -57,9 +57,9 @@ def check_camera_health(camera):
             camera_healthy = False
 
         # Temperature Warning Check
-        #if camera['temperature_warning'] != 'normal':
-        #    messages.append(f"Warning: Temperature Status - {camera['temperature_warning']}")
-        #    camera_healthy = False
+        if camera['temperature_warning'] != 'normal':
+            messages.append(f"Warning: Temperature Status - {camera['temperature_warning']}")
+            camera_healthy = False
 
         # Bandwidth Health Check
         if camera['bandwidth'] < 1000:  # Example threshold for bandwidth (1 Mbps)
