@@ -1,5 +1,3 @@
-# .github/workflows/scheduler.yml
-
 name: Run Python Script and Alert via Telegram
 
 on:
@@ -29,4 +27,4 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
         run: |
-          python app.py
+          python check_script.py
