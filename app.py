@@ -148,5 +148,5 @@ data_health = camera_data["props"]["userDevices"]["stickup_cams"][0]["health"]
 if __name__ == "__main__":
     #Check Camera health
     message = check_camera_health(data_health)
-    if message:
+    if bool(message):
         send_telegram_message(message)
