@@ -5,7 +5,7 @@ name: Run Python Script and Alert via Telegram
 on:
   # Schedule to run the workflow automatically (e.g., every hour)
   schedule:
-    - cron: "*/5 * * * *" # Adjust this as needed
+    - cron: "* * * * *" # Adjust this as needed
 
 jobs:
   run-script:
