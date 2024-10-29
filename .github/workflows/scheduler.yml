@@ -4,7 +4,7 @@ name: Run Python Script and Alert via Telegram
 
 on:
   schedule:
-    - cron: '5 * * * *' # Adjust this as needed
+    - cron: '*/5 * * * *' # Adjust this as needed
 
 jobs:
   run-script:
