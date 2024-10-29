@@ -56,20 +56,15 @@ def check_camera_health(camera):
             messages.append("Warning: RSSI is low. Consider improving signal strength.")
             camera_healthy = False
 
-        # Temperature Warning Check
-        if camera['temperature_warning'] != 'normal':
-            messages.append(f"Warning: Temperature Status - {camera['temperature_warning']}")
-            camera_healthy = False
-
         # Bandwidth Health Check
         if camera['bandwidth'] < 1000:  # Example threshold for bandwidth (1 Mbps)
             messages.append("Warning: Bandwidth is low. Streaming quality may be affected.")
             camera_healthy = False
 
         # Stream Resolution Health Check
-        #if camera['stream_resolution'] < 720:  # Minimum recommended resolution
-        #    messages.append("Warning: Stream resolution " + str(camera['stream_resolution']) + " is below the recommended level.")
-        #    camera_healthy = False
+        if camera['stream_resolution'] < 720:  # Minimum recommended resolution
+            messages.append("Warning: Stream resolution " + str(camera['stream_resolution']) + " is below the recommended level.")
+            camera_healthy = False
 
         # Battery Error Check
         if camera['battery_error']:
