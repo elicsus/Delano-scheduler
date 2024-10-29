@@ -92,6 +92,7 @@ def check_camera_health(camera):
 
 def send_telegram_message(message):
     bot_token = os.getenv("BOT_TOKEN")
+    print(bot_token)
     chat_id = os.getenv("CHAT_ID")
     url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
     payload = {
