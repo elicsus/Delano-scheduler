@@ -27,8 +27,6 @@ jobs:
         run: |
           pip install requests
           pip install bs4
-          pip install json
-          pip install os
 
       - name: Run Python script
         env:
