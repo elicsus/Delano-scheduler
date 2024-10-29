@@ -29,8 +29,5 @@ jobs:
           pip install bs4
 
       - name: Run Python script
-        env:
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-          CHAT_ID: ${{ secrets.CHAT_ID }}
         run: |
           python app.py
