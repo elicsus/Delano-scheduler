@@ -47,7 +47,7 @@ def load_camera_data_from_file(file_path):
         return None
 
 def check_camera_health(camera):
-    camera_healthy = True  # Assume the camera is healthy initially
+    camera_healthy = False  # Assume the camera is healthy initially ----------------------------change to True at production 
     messages = ["Github"]  # List to collect health messages
 
     if camera['connected']:
