@@ -89,11 +89,12 @@ def check_camera_health(camera):
         print("Camera Healthy: Yes")
 
     return messages
-
+#--------------------------------------------------USE SECRETS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 def send_telegram_message(message):
-    bot_token = os.getenv("BOT_TOKEN")
-    print(bot_token)
-    chat_id = os.getenv("CHAT_ID")
+    #bot_token = os.getenv("BOT_TOKEN")
+    #chat_id = os.getenv("CHAT_ID")
+    bot_token = "7741198322:AAFEUJ84tSBimWKcaLV8UdRG3xyjFnCPCLw"
+    chat_id = "6333434597"
     url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
     payload = {
         'chat_id': chat_id,
