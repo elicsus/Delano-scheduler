@@ -1,8 +1,14 @@
+# .github/workflows/scheduler.yml
+
 name: Run Python Script and Alert via Telegram
 
 on:
+  # Allows manual triggering of the workflow
+  workflow_dispatch:
+  
+  # Schedule to run the workflow automatically (e.g., every hour)
   schedule:
-    - cron: '0 * * * *'  # Runs every hour (you can adjust this)
+    - cron: '0 * * * *'  # Adjust this as needed; this runs every hour
 
 jobs:
   run-script:
