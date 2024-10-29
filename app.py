@@ -57,7 +57,7 @@ def check_camera_health(camera):
             camera_healthy = False
 
         # Bandwidth Health Check
-        if camera['bandwidth'] < 1000:  # Example threshold for bandwidth (1 Mbps)
+        if camera['bandwidth'] < 9000:  # Example threshold for bandwidth (1 Mbps)
             messages.append("Warning: Bandwidth is low. Streaming quality may be affected.")
             camera_healthy = False
 
