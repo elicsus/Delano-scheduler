@@ -8,7 +8,7 @@ on:
   
   # Schedule to run the workflow automatically (e.g., every hour)
   schedule:
-    - cron: '*/5 * * * *'  # Adjust this as needed; this runs every hour
+    - cron: "*/5 * * * *" # Adjust this as needed
 
 jobs:
   run-script:
