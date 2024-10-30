@@ -47,7 +47,7 @@ def load_camera_data_from_file(file_path):
         return None
 
 def check_camera_health(camera):
-    camera_healthy = False  # Assume the camera is healthy initially ----------------------------change to True at production 
+    camera_healthy = True  # Assume the camera is healthy initially ----------------------------change to True at production 
     messages = ["Github"]  # List to collect health messages
 
     if camera['connected']:
@@ -62,9 +62,9 @@ def check_camera_health(camera):
             camera_healthy = False
 
         # Stream Resolution Health Check
-        if camera['stream_resolution'] < 720:  # Minimum recommended resolution
-            messages.append("Warning: Stream resolution " + str(camera['stream_resolution']) + " is below the recommended level.")
-            camera_healthy = False
+        #if camera['stream_resolution'] < 720:  # Minimum recommended resolution
+        #    messages.append("Warning: Stream resolution " + str(camera['stream_resolution']) + " is below the recommended level.")
+        #    camera_healthy = False
 
         # Battery Error Check
         if camera['battery_error']:
