@@ -48,7 +48,7 @@ def load_camera_data_from_file(file_path):
 
 def check_camera_health(camera):
     camera_healthy = True  # Assume the camera is healthy initially ----------------------------change to True at production 
-    messages = []  # List to collect health messages
+    messages = [Test]  # List to collect health messages
 
     if camera['connected']:
         # RSSI Health Check
@@ -89,19 +89,18 @@ def check_camera_health(camera):
         print("Camera Healthy: Yes")
 
     return messages
-#--------------------------------------------------USE SECRETS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#-------------------------------------------------------------------------------------USE SECRETS !!!!!!
 def send_telegram_message(message):
-    #bot_token = os.getenv("BOT_TOKEN")
-    #chat_id = os.getenv("CHAT_ID")
     bot_token = "7741198322:AAFEUJ84tSBimWKcaLV8UdRG3xyjFnCPCLw"
-    chat_id = "6333434597"
+    chat_ids = ["6333434597", "142181097"]  # Add more chat IDs as needed
     url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
+    
     full_message = "\n".join(message) 
-    payload = {
-        'chat_id': chat_id,
-        'text': full_message
-    }
-    requests.post(url, data=payload)
+    payload = {'text': full_message}
+
+    for chat_id in chat_ids:
+        payload['chat_id'] = chat_id
+        requests.post(url, data=payload)
 
 # Test with a sample URL and cookies
 url = "https://account.ring.com/account/dashboard?l=2bce1860-42cb-401d-9211-20d9e77760ed&lv_d=554788975"
