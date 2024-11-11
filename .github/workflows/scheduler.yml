@@ -3,8 +3,8 @@
 name: Run Python Script and Alert via Telegram
 
 on:
-  schedule:
-    - cron: '0/5 * * * *' # Adjust this as needed
+  #schedule:
+   # - cron: '0/5 * * * *' # Adjust this as needed
   
   workflow_dispatch:
 
