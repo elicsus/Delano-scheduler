@@ -47,8 +47,8 @@ def load_camera_data_from_file(file_path):
         return None
 
 def check_camera_health(camera):
-    camera_healthy = True  # Assume the camera is healthy initially ----------------------------change to false for testing 
-    messages = ["test"]  # List to collect health messages
+    camera_healthy = True  # Assume the camera is healthy initially ----------------------------change to True for production 
+    messages = []  # List to collect health messages
 
     if camera['connected']:
         # RSSI Health Check
@@ -92,7 +92,7 @@ def check_camera_health(camera):
 #-------------------------------------------------------------------------------------USE SECRETS !!!!!!
 def send_telegram_message(message):
     bot_token = "7741198322:AAFEUJ84tSBimWKcaLV8UdRG3xyjFnCPCLw"
-    chat_ids = ["6333434597"]  # Add more chat IDs as needed , ID "142181097" 
+    chat_ids = ["6333434597", "142181097"]  # Add more chat IDs as needed 
     url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
     
     full_message = "\n".join(message) 
