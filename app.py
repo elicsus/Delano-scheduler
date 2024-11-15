@@ -72,9 +72,9 @@ def check_camera_health(camera):
             camera_healthy = False
 
         # Uptime Check
-        if camera['uptime_sec'] < 3600:  # Example threshold for minimum uptime (1 hour)
-            messages.append("Warning: Uptime is below the recommended threshold.")
-            camera_healthy = False
+        #if camera['uptime_sec'] < 3600:  # Example threshold for minimum uptime (1 hour)
+        #    messages.append("Warning: Uptime is below the recommended threshold.")
+        #    camera_healthy = False
     else:
         messages.append("Status: Not connected.")
         camera_healthy = False
