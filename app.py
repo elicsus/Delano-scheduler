@@ -47,8 +47,8 @@ def load_camera_data_from_file(file_path):
         return None
 
 def check_camera_health(camera):
-    camera_healthy = False  # Assume the camera is healthy initially ----------------------------change to True for production 
-    messages = []  # List to collect health messages
+    camera_healthy = True  # Assume the camera is healthy initially ----------------------------change to True for production 
+    messages = ["Github Test"]  # List to collect health messages
 
     if camera['connected']:
         # RSSI Health Check
