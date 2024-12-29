@@ -105,33 +105,35 @@ def send_telegram_message(message):
 # Test with a sample URL and cookies
 url = "https://account.ring.com/account/dashboard?l=2bce1860-42cb-401d-9211-20d9e77760ed&lv_d=554788975"
 
+   
 cookies = {
     'campaign': '%7B%22data%22%3A%7B%22utm_source%22%3Anull%2C%22utm_medium%22%3Anull%2C%22utm_campaign%22%3Anull%2C%22utm_content%22%3Anull%2C%22utm_term%22%3Anull%2C%22referrer%22%3A%22https%3A%2F%2Fring.com%2F%22%2C%22path%22%3A%22%2Faccount%2Fdashboard%22%7D%7D',
     'next-i18next': 'en-gb',
     '_shopify_s': '5c9e298b-4524-449a-92d8-e631544d6d75',
-    '_shopify_y': '270eb1c3-40fc-44cb-b35a-f88694f25e76',
+    '_shopify_y': 'ef6f1ab6-4324-491e-a581-80e7839d8ec4',
     'rs_an_loc_id': '2bce1860-42cb-401d-9211-20d9e77760ed',
     'cc-privacy-cookie': '%7B%22analytics_heap%22%3A%22false%22%2C%22analytics_optimizely%22%3A%22false%22%7D',
-    'rs_session': '2cXsFr3tua9ytHvx9zgojtjE0NzA0MDUyMAVaXkJplkKRsNUQLmZnenqcqGyphliyNa514tU8YrcFI',
-    'userty.core.s.d30cd6': '__SI6MTczMTUyMjkzMzcwOSwic2lkIjoiNzIwNjdmM2IzMTI1OGY4YTNmZTRlMjUzMThhNjI0MzciLCJzdCI6MTczMTUyMTEwNjUyNiwicmVhZHkiOnRydWUsIndzIjoie1wid1wiOjE0NDAsXCJoXCI6Nzk3fSIsImF1cnljLmZidC4xMDU1MiI6InQiLCJwdiI6Mn0=eyJzZ',
-    '_hp2_id.1155664863': '%7B%22userId%22%3A%223649063783902093%22%2C%22pageviewId%22%3A%222025746874292194%22%2C%22sessionId%22%3A%222816154469897697%22%2C%22identity%22%3Anull%2C%22trackerVersion%22%3A%224.0%22%7D',
-    '_hp2_props.1155664863': '%7B%22product_finding_method%22%3A%22PLP%22%2C%22product_finding_method_pagename%22%3A%22home-security-cameras%22%2C%22product_finding_method_detail%22%3A%22Product%20Recs%22%2C%22utm_source_via_snapshot%22%3Anull%2C%22utm_medium_via_snapshot%22%3Anull%2C%22utm_campaign_via_snapshot%22%3Anull%2C%22utm_content_via_snapshot%22%3Anull%2C%22utm_term_via_snapshot%22%3Anull%2C%22referrer_via_snapshot%22%3A%22%22%2C%22landing_path_via_snapshot%22%3A%22%2F%22%7D',
-    'userty.core.p.d30cd6': '__2VySWQiOiI0NWRlMTQ1MDlkNDI3NTg1Mzg3NTM4YjFmOGViMjg4NCJ9eyJ1c',
-    'optimizelyEndUserId': 'oeu1726660636393r0.45507257271588675',
+    'rs_session': '2XvvVcxMSKjuqdyrpZerTFjE0NzA0MDUyMAZHJf6etpUF9NEqcciEasGYWV08fmMEg-ngUo9XBNbg0',
+    'userty.core.s.d30cd6': '__SI6MTczNTQ3NDE3MTE5Miwic2lkIjoiNzE4N2QxNDNkZWVhY2U3NjBhMWI5MTM1YzFmYTI1YTciLCJzdCI6MTczNTQ3MTI1ODYyMSwicHYiOjQsInJlYWR5Ijp0cnVlLCJ3cyI6IntcIndcIjoxNDQwLFwiaFwiOjc5N30ifQ==eyJzZ',
+    '_hp2_id.1155664863': '%7B%22userId%22%3A%223146994307127478%22%2C%22pageviewId%22%3A%224716282867253367%22%2C%22sessionId%22%3A%221094559028117651%22%2C%22identity%22%3Anull%2C%22trackerVersion%22%3A%224.0%22%7D',
+    '_hp2_props.1155664863': '%7B%22utm_source_via_snapshot%22%3Anull%2C%22utm_medium_via_snapshot%22%3Anull%2C%22utm_campaign_via_snapshot%22%3Anull%2C%22utm_content_via_snapshot%22%3Anull%2C%22utm_term_via_snapshot%22%3Anull%2C%22referrer_via_snapshot%22%3A%22%22%2C%22landing_path_via_snapshot%22%3A%22%2F%22%7D',
+    'userty.core.p.d30cd6': '__2VySWQiOiI0ODYxMGYxNDJiZGY3MjE1N2IxMTk4Nzg2ZjI5MTk5MSJ9eyJ1c',
+    'optimizelyEndUserId': 'oeu1735070327196r0.5091819696980051',
     'geo': 'IL',
     '_a_id': '8e659d0d-a406-4495-bf7d-2cd84e17b882',
     'cwr_u': 'f5e7cd88-29f3-4886-af32-f0010bffcf96',
     '__stripe_mid': '135fc963-71eb-4e8b-94d0-eaeea018460cea5dab',
-    'rsas': '87db3353-393b-44a1-bf64-34f7faa4b98f',
+    'rsas': 'c3205203-1424-49e7-b636-f4bdba15ad6c',
     'rCookie': 'ghhm1b1mdg75kogy9qz625m2dlrh7y',
     'lastRskxRun': '1729187789037',
     'rskxRunCookie': '0',
     'theme-preference_147040520': 'system',
     'theme-preference_147042711': 'system',
-    'rs_hwid': '5ce1e47a-aa39-4e40-a531-ee11d07a4c8f',
+    'rs_geo': 'IL',
+    'rs_hwid': '97530a57-d0d3-400b-93f6-8b2a77a32f93',
     'privacy-banner': 'true',
     'privacy-banner-clicked': 'true',
-    'privacy-cookie': '%7B%22version%22%3A12%2C%22analytics_optimizely%22%3Atrue%2C%22analytics_yext%22%3Atrue%2C%22analytics_heap%22%3Atrue%2C%22advertising_kenshoo%22%3Atrue%2C%22advertising_amazonDisplay%22%3Atrue%2C%22advertising_sizmek%22%3Atrue%2C%22consentUrl%22%3A%22https%3A%2F%2Fring.com%2Fproducts%2Fstick-up-cam%22%2C%22consentDate%22%3A%22Wed%2C%2018%20Sep%202024%2013%3A43%3A01%20GMT%22%2C%22rw_mp%22%3A%22US%22%7D'
+    'privacy-cookie': '%7B%22version%22%3A12%2C%22analytics_optimizely%22%3Atrue%2C%22analytics_yext%22%3Atrue%2C%22analytics_heap%22%3Atrue%2C%22advertising_kenshoo%22%3Atrue%2C%22advertising_amazonDisplay%22%3Atrue%2C%22advertising_sizmek%22%3Atrue%2C%22consentUrl%22%3A%22https%3A%2F%2Fring.com%2F%22%2C%22consentDate%22%3A%22Sun%2C%2029%20Dec%202024%2011%3A20%3A54%20GMT%22%2C%22rw_mp%22%3A%22US%22%7D'
 }
 
 # Fetch camera data
